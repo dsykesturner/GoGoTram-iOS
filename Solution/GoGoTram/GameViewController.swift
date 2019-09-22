@@ -10,14 +10,14 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class TramGameViewController: UIViewController {
+class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             
-            let scene = TramGameScene(size: view.frame.size)
+            let scene = GameScene(size: view.frame.size)
             view.presentScene(scene)
             
             view.ignoresSiblingOrder = true

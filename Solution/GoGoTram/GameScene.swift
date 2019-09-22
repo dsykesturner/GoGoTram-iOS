@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class TramGameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // Actors
     var tram: SKSpriteNode?
@@ -23,12 +23,14 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
     // Game Variables
     var score: UInt64 = 0 {
         didSet {
-            if let scoreLabel = self.scoreLabel {
-                scoreLabel.text = "\(self.score)"
-            }
+            self.scoreLabel?.text = "\(self.score)"
         }
     }
-    var level: Int = 0
+    var level: Int = 0 {
+        didSet {
+            self.levelLabel?.text = "Level \(self.level)"
+        }
+    }
     var gameStarted: Bool = false
     // Game Constants
     let createCollectablesActionKey = "createCollectables"
@@ -69,6 +71,7 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
         self.playGameButton = SKLabelNode(text: "Play")
         self.playGameButton?.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         self.playGameButton?.zPosition = layers.text
+        self.playGameButton?.alpha = 0
         self.addChild(self.playGameButton!)
     }
     
@@ -93,7 +96,6 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
         let texture = SKTexture(imageNamed: imageName)
         let collectable = SKSpriteNode(texture: texture, size: texture.size())
         collectable.zPosition = layers.actor
-        //collectable.physicsBody = SKPhysicsBody(texture: texture, alphaThreshold: 0.3, size: texture.size())
         collectable.physicsBody = SKPhysicsBody(rectangleOf: texture.size())
         
         if let pb = collectable.physicsBody {
@@ -152,7 +154,6 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
         let numberOfCollectables = self.level * 50
         
         // Show next level label and progress level
-        self.levelLabel?.text = "Level \(self.level)"
         self.levelLabel?.run(SKAction.sequence([
             SKAction.fadeIn(withDuration: 0.5),
             SKAction.wait(forDuration: 1),
@@ -172,7 +173,7 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
     
     // MARK: Sprite Handling
     
-    func updateTram(position: CGPoint) {
+    func moveTram(position: CGPoint) {
         
         if let tram = self.tram, self.gameStarted == true {
             tram.position = CGPoint(x: 150, y: position.y)
@@ -232,7 +233,7 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
         for t in touches {
             let position = t.location(in: self)
             
-            self.updateTram(position: position)
+            self.moveTram(position: position)
             
             if self.playGameButton?.alpha == 1 && self.playGameButton!.frame.contains(position) {
                 // Remove all end game actors (this doesn't include the tram)
@@ -251,15 +252,15 @@ class TramGameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.updateTram(position: t.location(in: self)) }
+        for t in touches { self.moveTram(position: t.location(in: self)) }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.updateTram(position: t.location(in: self)) }
+        for t in touches { self.moveTram(position: t.location(in: self)) }
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.updateTram(position: t.location(in: self)) }
+        for t in touches { self.moveTram(position: t.location(in: self)) }
     }
     
     // MARK: SKPhysicsContactDelegate
