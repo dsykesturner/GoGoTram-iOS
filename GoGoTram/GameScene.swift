@@ -9,13 +9,13 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class TramGameScene: SKScene, SKPhysicsContactDelegate {
     
     // Actors
     var tram: SKSpriteNode?
     var signalFault: SKSpriteNode?
     var passengers: SKSpriteNode?
-    var fire: SKLabelNode?
+    var endGameActors = [SKNode]()
     // Labels
     var scoreLabel: SKLabelNode?
     var levelLabel: SKLabelNode?
@@ -24,20 +24,7 @@ class GameScene: SKScene {
     var score: UInt64 = 0 {
         didSet {
             if let scoreLabel = self.scoreLabel {
-                if scoreBonus > 0 {
-                    scoreLabel.text = "\(self.score) (+\(self.scoreBonus))"
-                } else {
-                    scoreLabel.text = "\(self.score)"
-                }
-            }
-        }
-    }
-    var scoreBonus: UInt64 = 0 {
-        didSet {
-            if let scoreLabel = self.scoreLabel {
-                if scoreBonus == 0 {
-                    scoreLabel.text = "\(self.score)"
-                }
+                scoreLabel.text = "\(self.score)"
             }
         }
     }
@@ -45,6 +32,7 @@ class GameScene: SKScene {
     var gameStarted: Bool = false
     // Game Constants
     let createCollectablesActionKey = "createCollectables"
+    
     
     // MARK: Scene Setup
     
@@ -120,13 +108,14 @@ class GameScene: SKScene {
     
     func createFire(collisionPoint: CGPoint) {
         
-        self.fire = SKLabelNode(text: "🔥")
-        self.fire?.position = collisionPoint
-        self.fire?.zPosition = layers.fire
-        self.fire?.alpha = 0
+        let fire = SKLabelNode(text: "🔥")
+        fire.position = collisionPoint
+        fire.zPosition = layers.fire
+        fire.alpha = 0
         
-        self.addChild(self.fire!)
-        self.fire?.run(SKAction.fadeIn(withDuration: 0.5))
+        self.endGameActors.append(fire)
+        self.addChild(fire)
+        fire.run(SKAction.fadeIn(withDuration: 0.5))
     }
     
     // MARK: Game State
@@ -135,7 +124,6 @@ class GameScene: SKScene {
 
         self.gameStarted = true
         self.score = 0
-        self.scoreBonus = 0
         self.level = 0
         
         self.tram?.run(SKAction.fadeIn(withDuration: 0.5))
@@ -156,8 +144,6 @@ class GameScene: SKScene {
         self.playGameButton?.run(SKAction.fadeIn(withDuration: 0.5))
         
         self.createFire(collisionPoint: collisionPoint)
-        
-//        signalFault.run(SKAction.removeFromParent())
     }
     
     func moveToNextLevel() {
@@ -223,9 +209,6 @@ class GameScene: SKScene {
             SKAction.move(to: CGPoint(x: endingX, y: endingY), duration: 2),
         completion: {
             collectable.run(SKAction.removeFromParent())
-            if collectable.physicsBody?.categoryBitMask == pc.passengers {
-                self.scoreBonus = 0
-            }
         })
     }
     
@@ -233,14 +216,14 @@ class GameScene: SKScene {
         print("hit signalFault")
         signalFault.physicsBody?.collisionBitMask = pc.none
         signalFault.removeAllActions()
+        self.endGameActors.append(signalFault)
         self.endGame(signalFault: signalFault, collisionPoint: collisionPoint)
     }
     
     func handleContact(passengers: SKSpriteNode) {
-        print("hit passengers")
+        print("picked up passengers")
         passengers.run(SKAction.removeFromParent())
-        self.score += (2+self.scoreBonus)
-        self.scoreBonus += 1
+        self.score += 2
     }
     
     // MARK: Touch Handling
@@ -252,6 +235,16 @@ class GameScene: SKScene {
             self.updateTram(position: position)
             
             if self.playGameButton?.alpha == 1 && self.playGameButton!.frame.contains(position) {
+                // Remove all end game actors (this doesn't include the tram)
+                for actor in self.endGameActors {
+                    actor.run(SKAction.sequence([
+                        SKAction.fadeOut(withDuration: 0.5),
+                        SKAction.removeFromParent()
+                    ]))
+                }
+                self.endGameActors.removeAll()
+                
+                // Start a new game
                 self.startGame()
             }
         }
@@ -268,9 +261,6 @@ class GameScene: SKScene {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.updateTram(position: t.location(in: self)) }
     }
-}
-
-extension GameScene: SKPhysicsContactDelegate {
     
     // MARK: SKPhysicsContactDelegate
     
