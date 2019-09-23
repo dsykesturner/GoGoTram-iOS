@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6515A442232254910047F7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515A441232254910047F7D1 /* AppDelegate.swift */; };
-		6515A448232254910047F7D1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515A447232254910047F7D1 /* GameScene.swift */; };
-		6515A44A232254910047F7D1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515A449232254910047F7D1 /* GameViewController.swift */; };
-		6515A44D232254910047F7D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6515A44B232254910047F7D1 /* Main.storyboard */; };
-		6515A44F232254920047F7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6515A44E232254920047F7D1 /* Assets.xcassets */; };
-		6515A452232254920047F7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6515A450232254920047F7D1 /* LaunchScreen.storyboard */; };
-		6515A45A2324A9BA0047F7D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515A4592324A9BA0047F7D1 /* Constants.swift */; };
+		65CE99D4233745EF00F993F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE99D3233745EF00F993F9 /* AppDelegate.swift */; };
+		65CE99DA233745EF00F993F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE99D9233745EF00F993F9 /* GameScene.swift */; };
+		65CE99DC233745EF00F993F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE99DB233745EF00F993F9 /* GameViewController.swift */; };
+		65CE99DF233745EF00F993F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CE99DD233745EF00F993F9 /* Main.storyboard */; };
+		65CE99E1233745F100F993F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CE99E0233745F100F993F9 /* Assets.xcassets */; };
+		65CE99E4233745F100F993F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CE99E2233745F100F993F9 /* LaunchScreen.storyboard */; };
+		65CE99EC23379EA200F993F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE99EB23379EA200F993F9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6515A43E232254910047F7D1 /* GoGoTram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGoTram.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6515A441232254910047F7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6515A447232254910047F7D1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		6515A449232254910047F7D1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		6515A44C232254910047F7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6515A44E232254920047F7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6515A451232254920047F7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6515A453232254920047F7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6515A4592324A9BA0047F7D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		65CE99D0233745EF00F993F9 /* GoGoTram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGoTram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CE99D3233745EF00F993F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65CE99D9233745EF00F993F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		65CE99DB233745EF00F993F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		65CE99DE233745EF00F993F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65CE99E0233745F100F993F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65CE99E3233745F100F993F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65CE99E5233745F100F993F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CE99EB23379EA200F993F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6515A43B232254910047F7D1 /* Frameworks */ = {
+		65CE99CD233745EF00F993F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,33 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6515A435232254910047F7D1 = {
+		65CE99C7233745EF00F993F9 = {
 			isa = PBXGroup;
 			children = (
-				6515A440232254910047F7D1 /* GoGoTram */,
-				6515A43F232254910047F7D1 /* Products */,
+				65CE99D2233745EF00F993F9 /* GoGoTram */,
+				65CE99D1233745EF00F993F9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6515A43F232254910047F7D1 /* Products */ = {
+		65CE99D1233745EF00F993F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6515A43E232254910047F7D1 /* GoGoTram.app */,
+				65CE99D0233745EF00F993F9 /* GoGoTram.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6515A440232254910047F7D1 /* GoGoTram */ = {
+		65CE99D2233745EF00F993F9 /* GoGoTram */ = {
 			isa = PBXGroup;
 			children = (
-				6515A441232254910047F7D1 /* AppDelegate.swift */,
-				6515A447232254910047F7D1 /* GameScene.swift */,
-				6515A4592324A9BA0047F7D1 /* Constants.swift */,
-				6515A449232254910047F7D1 /* GameViewController.swift */,
-				6515A44B232254910047F7D1 /* Main.storyboard */,
-				6515A44E232254920047F7D1 /* Assets.xcassets */,
-				6515A450232254920047F7D1 /* LaunchScreen.storyboard */,
-				6515A453232254920047F7D1 /* Info.plist */,
+				65CE99D3233745EF00F993F9 /* AppDelegate.swift */,
+				65CE99D9233745EF00F993F9 /* GameScene.swift */,
+				65CE99EB23379EA200F993F9 /* Constants.swift */,
+				65CE99DB233745EF00F993F9 /* GameViewController.swift */,
+				65CE99DD233745EF00F993F9 /* Main.storyboard */,
+				65CE99E0233745F100F993F9 /* Assets.xcassets */,
+				65CE99E2233745F100F993F9 /* LaunchScreen.storyboard */,
+				65CE99E5233745F100F993F9 /* Info.plist */,
 			);
 			path = GoGoTram;
 			sourceTree = "<group>";
@@ -73,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6515A43D232254910047F7D1 /* GoGoTram */ = {
+		65CE99CF233745EF00F993F9 /* GoGoTram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6515A456232254920047F7D1 /* Build configuration list for PBXNativeTarget "GoGoTram" */;
+			buildConfigurationList = 65CE99E8233745F100F993F9 /* Build configuration list for PBXNativeTarget "GoGoTram" */;
 			buildPhases = (
-				6515A43A232254910047F7D1 /* Sources */,
-				6515A43B232254910047F7D1 /* Frameworks */,
-				6515A43C232254910047F7D1 /* Resources */,
+				65CE99CC233745EF00F993F9 /* Sources */,
+				65CE99CD233745EF00F993F9 /* Frameworks */,
+				65CE99CE233745EF00F993F9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +87,25 @@
 			);
 			name = GoGoTram;
 			productName = GoGoTram;
-			productReference = 6515A43E232254910047F7D1 /* GoGoTram.app */;
+			productReference = 65CE99D0233745EF00F993F9 /* GoGoTram.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6515A436232254910047F7D1 /* Project object */ = {
+		65CE99C8233745EF00F993F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Daniel Sykes-Turner";
 				TargetAttributes = {
-					6515A43D232254910047F7D1 = {
-						CreatedOnToolsVersion = 10.3;
+					65CE99CF233745EF00F993F9 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = 6515A439232254910047F7D1 /* Build configuration list for PBXProject "GoGoTram" */;
+			buildConfigurationList = 65CE99CB233745EF00F993F9 /* Build configuration list for PBXProject "GoGoTram" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 6515A435232254910047F7D1;
-			productRefGroup = 6515A43F232254910047F7D1 /* Products */;
+			mainGroup = 65CE99C7233745EF00F993F9;
+			productRefGroup = 65CE99D1233745EF00F993F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6515A43D232254910047F7D1 /* GoGoTram */,
+				65CE99CF233745EF00F993F9 /* GoGoTram */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6515A43C232254910047F7D1 /* Resources */ = {
+		65CE99CE233745EF00F993F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6515A44D232254910047F7D1 /* Main.storyboard in Resources */,
-				6515A44F232254920047F7D1 /* Assets.xcassets in Resources */,
-				6515A452232254920047F7D1 /* LaunchScreen.storyboard in Resources */,
+				65CE99DF233745EF00F993F9 /* Main.storyboard in Resources */,
+				65CE99E1233745F100F993F9 /* Assets.xcassets in Resources */,
+				65CE99E4233745F100F993F9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6515A43A232254910047F7D1 /* Sources */ = {
+		65CE99CC233745EF00F993F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6515A448232254910047F7D1 /* GameScene.swift in Sources */,
-				6515A44A232254910047F7D1 /* GameViewController.swift in Sources */,
-				6515A442232254910047F7D1 /* AppDelegate.swift in Sources */,
-				6515A45A2324A9BA0047F7D1 /* Constants.swift in Sources */,
+				65CE99DA233745EF00F993F9 /* GameScene.swift in Sources */,
+				65CE99DC233745EF00F993F9 /* GameViewController.swift in Sources */,
+				65CE99D4233745EF00F993F9 /* AppDelegate.swift in Sources */,
+				65CE99EC23379EA200F993F9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6515A44B232254910047F7D1 /* Main.storyboard */ = {
+		65CE99DD233745EF00F993F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6515A44C232254910047F7D1 /* Base */,
+				65CE99DE233745EF00F993F9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6515A450232254920047F7D1 /* LaunchScreen.storyboard */ = {
+		65CE99E2233745F100F993F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6515A451232254920047F7D1 /* Base */,
+				65CE99E3233745F100F993F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6515A454232254920047F7D1 /* Debug */ = {
+		65CE99E6233745F100F993F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,7 +202,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -221,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		6515A455232254920047F7D1 /* Release */ = {
+		65CE99E7233745F100F993F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +262,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -276,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +284,13 @@
 			};
 			name = Release;
 		};
-		6515A457232254920047F7D1 /* Debug */ = {
+		65CE99E9233745F100F993F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBH98PBY69;
 				INFOPLIST_FILE = GoGoTram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,14 +302,13 @@
 			};
 			name = Debug;
 		};
-		6515A458232254920047F7D1 /* Release */ = {
+		65CE99EA233745F100F993F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MBH98PBY69;
 				INFOPLIST_FILE = GoGoTram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6515A439232254910047F7D1 /* Build configuration list for PBXProject "GoGoTram" */ = {
+		65CE99CB233745EF00F993F9 /* Build configuration list for PBXProject "GoGoTram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6515A454232254920047F7D1 /* Debug */,
-				6515A455232254920047F7D1 /* Release */,
+				65CE99E6233745F100F993F9 /* Debug */,
+				65CE99E7233745F100F993F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6515A456232254920047F7D1 /* Build configuration list for PBXNativeTarget "GoGoTram" */ = {
+		65CE99E8233745F100F993F9 /* Build configuration list for PBXNativeTarget "GoGoTram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6515A457232254920047F7D1 /* Debug */,
-				6515A458232254920047F7D1 /* Release */,
+				65CE99E9233745F100F993F9 /* Debug */,
+				65CE99EA233745F100F993F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6515A436232254910047F7D1 /* Project object */;
+	rootObject = 65CE99C8233745EF00F993F9 /* Project object */;
 }

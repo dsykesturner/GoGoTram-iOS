@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  GoGoTram
 //
-//  Created by Daniel Sykes-Turner on 6/9/19.
+//  Created by Daniel Sykes-Turner on 22/9/19.
 //  Copyright © 2019 Daniel Sykes-Turner. All rights reserved.
 //
 
@@ -16,15 +16,13 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            
             let scene = GameScene(size: view.frame.size)
             view.presentScene(scene)
             
             view.ignoresSiblingOrder = true
             
-//            view.showsFPS = true
-//            view.showsNodeCount = true
-//            view.showsPhysics = true
+            view.showsFPS = true
+            view.showsNodeCount = true
         }
     }
 
@@ -41,6 +39,6 @@ class GameViewController: UIViewController {
     }
     
     override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
-      return .bottom
+        return .bottom
     }
 }
