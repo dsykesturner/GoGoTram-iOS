@@ -2,13 +2,17 @@
 
 This project is for those interested in learning game play in Swift.
 
+It was built with Xcode 11 in Swift 5.1.
+
 ## Contents
 
 ### Swift Introduction
 
+These are playground files, which are best opened with Xcode so they can be executed.
+
 1. [Functions, Variables, and Comments](Swift-Introduction/1-Functions-Variables-Comments.playground)
 2. [Classes, Initalisers, and Structs](Swift-Introduction/2-Classes-Initalisers-Structs.playground)
-3. [Options](Swift-Introduction/3-Optionals.playground)
+3. [Optionals](Swift-Introduction/3-Optionals.playground)
 
 ### Creating the GoGoTram app
 
@@ -22,12 +26,12 @@ This project is for those interested in learning game play in Swift.
 
 ### Images
 
-You can find images for this project [here](Images)
+You can find the image resources for this project [here](Images).
 
 ### Solutions
 
-This project comes with two solutions
+This project comes with two solutions:
 
-[Solution A](Solution) is what you will get by following the instructions
+[Solution](Solution) is what you will get by following the instructions.
 
-[Solution B](Solution+) is an extension on **Solution A** with some added features and refinements
+[Solution+](Solution+) is an extension on the original **Solution** with some added features and refinements.
