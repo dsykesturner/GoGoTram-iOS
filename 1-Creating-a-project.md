@@ -1,4 +1,4 @@
-# Creating a project
+# 1. Creating a project
 
 ## Create a new Swift game project
 
@@ -8,7 +8,7 @@
 4. Enter "Organisation Name" as your name
 5. If you have a personal website, reverse it and enter it as your "Organisation Identifier"
 6. Choose Swift as the language
-7. Choos SpriteKit as the game technology
+7. Choose SpriteKit as the game technology
 8. Untick any boxes below
 9. Click "Next" and save your project
 
@@ -18,8 +18,8 @@ In Xcode 11 this project will come with a few files which can be deleted since w
 
 Delete the below files from the project, selecting "Move to Trash" when prompted:
 
-- GameScene.sks
-- Actions.sks
+- `GameScene.sks`
+- `Actions.sks`
 
 ## GameViewController.swift
 
@@ -59,7 +59,7 @@ to this:
 return .landscape
 ```
 
-Lastly, add another variable below to prevent users with home bars (e.g. iPhone X) from accidently exiting the game mid-play by swiping up the home bar:
+Lastly, add another variable below to prevent users with home bars (e.g. iPhone X) from accidentally exiting the game mid-play by swiping up the home bar:
 ```
 override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
   return .bottom
@@ -97,3 +97,5 @@ class GameScene: SKScene {
     }
 }
 ```
+
+Next: [2. Creating a tram](2-Creating-a-tram.md)

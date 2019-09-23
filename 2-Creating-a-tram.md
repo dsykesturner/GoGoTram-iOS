@@ -1,4 +1,4 @@
-# Creating a tram
+# 2. Creating a tram
 
 ## Adding images
 
@@ -131,3 +131,5 @@ self.addChild(backgroundImage)
 ```
 
 Build and run and you should see your tram on top of the background image.
+
+Next: [3. Passengers and signal faults](3-Passengers-and-signal-faults.md)

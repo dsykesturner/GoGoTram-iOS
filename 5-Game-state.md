@@ -1,8 +1,8 @@
-# Game state
+# 5. Game state
 
 ## Game start and end
 
-To handle collisions with passengers and signal faults, the game is going to need a way to track it's current state.
+To handle collisions with passengers and signal faults, the game is going to need a way to track its current state.
 
 Add the following variables at the top of the class to track the current score, the current level, whether the game has started, and a key to stop collectables from appearing once the game has ended:
 
@@ -99,3 +99,5 @@ func didBegin(_ contact: SKPhysicsContact) {
 ```
 
 Build and run, and you should see the tram continue after picking up passengers, but stop after hitting a signal fault.
+
+Next: [6. Labels and buttons](6-Labels-and-buttons.md)

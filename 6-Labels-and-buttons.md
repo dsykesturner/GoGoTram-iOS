@@ -1,4 +1,4 @@
-# Labels and buttons
+# 6. Labels and buttons
 
 Now that the game can run from start to finish, it needs a button to restart as well as labels to show the game state to the user.
 
@@ -18,13 +18,13 @@ These labels also needs adding to the scene. So inside the `setupScene` method, 
 
 ```
 self.scoreLabel = SKLabelNode()
-// Position this label to be centered and 50px from the top of the screen
+// Position this label to be centred and 50px from the top of the screen
 self.scoreLabel?.position = CGPoint(x: self.size.width/2, y: self.size.height-50)
 self.scoreLabel?.zPosition = layers.text
 self.addChild(self.scoreLabel!)
 
 self.levelLabel = SKLabelNode()
-// Position this label to be centered and 2/3 up the screen
+// Position this label to be centred and 2/3 up the screen
 self.levelLabel?.position = CGPoint(x: self.size.width/2, y: self.size.height/3*2)
 self.levelLabel?.zPosition = layers.text
 // Start on screen hidden
@@ -32,7 +32,7 @@ self.levelLabel?.alpha = 0
 self.addChild(self.levelLabel!)
 
 self.playGameButton = SKLabelNode(text: "Play")
-// Position this button (really a label) to be center screen
+// Position this button (really a label) to be centre screen
 self.playGameButton?.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
 self.playGameButton?.zPosition = layers.text
 self.playGameButton?.alpha = 0
@@ -107,7 +107,7 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // Update the tram position
         self.moveTram(position: position)
         
-        // If the play game button is visible, and the touch occured on the button
+        // If the play game button is visible, and the touch occurred on the button
         if self.playGameButton?.alpha == 1 && self.playGameButton!.frame.contains(position) {
             // Start a new game
             self.startGame()
@@ -116,4 +116,6 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 }
 ```
 
-Build and 
+You're done! Build and run, and you should have a playable game which increases the level as your tram progresses. 
+
+Next: [7. Next steps](7-Next-steps.md)

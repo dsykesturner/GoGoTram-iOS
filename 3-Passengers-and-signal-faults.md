@@ -1,4 +1,4 @@
-# Passengers and Signal Faults
+# 3. Passengers and Signal Faults
 
 ## New images
 
@@ -127,3 +127,5 @@ completion: {
 ```
 
 Build and run, and you should see 50 collectables spawn and move across the screen. You won't be able to interact with them just yet!
+
+Next: [4. Collision detection](4-Collision-detection.md)

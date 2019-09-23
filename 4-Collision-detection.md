@@ -1,4 +1,4 @@
-# Collision detection
+# 4. Collision detection
 
 ## Physics categories
 
@@ -93,3 +93,5 @@ func didBegin(_ contact: SKPhysicsContact) {
 ```
 
 Build and run, and see what happens!
+
+Next: [5. Game state](5-Game-state.md)
