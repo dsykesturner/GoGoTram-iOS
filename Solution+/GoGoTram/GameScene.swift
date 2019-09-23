@@ -71,7 +71,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.playGameButton = SKLabelNode(text: "Play")
         self.playGameButton?.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         self.playGameButton?.zPosition = layers.text
-        self.playGameButton?.alpha = 0
         self.addChild(self.playGameButton!)
     }
     

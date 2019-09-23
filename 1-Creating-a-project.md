@@ -21,6 +21,10 @@ Delete the below files from the project, selecting "Move to Trash" when prompted
 - `GameScene.sks`
 - `Actions.sks`
 
+## Landscape support
+
+In the project navigator, select the `GoGoTram` project, select the `GoGoTram` target, and under the `General` tab, make sure the only device orientations ticked are "Landscape Left" and "Landscape Right".  
+
 ## GameViewController.swift
 
 In the `GameViewController` under the `viewDidLoad` method, the game scene is created from the `GameScene.sks` file that was just deleted. Since this file no longer exists, the `GameScene` class can be loaded directly. 
